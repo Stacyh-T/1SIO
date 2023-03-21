@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include <stdbool.h> //définit les type booléen et les constantes booléennes de base.
+#include <stdbool.h> //dÃ©finit les type boolÃ©en et les constantes boolÃ©ennes de base.
 
 #define MAX_INTS 10
 
-// Fonction qui vérifie si un entier est déjà présent dans un tableau
+// Fonction qui vÃ©rifie si un entier est dÃ©jÃ  prÃ©sent dans un tableau
 bool contains(int array[], int size, int value)
 {
     for (int i = 0; i < size; i++)
