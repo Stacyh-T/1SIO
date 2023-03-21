@@ -1,3 +1,0 @@
-# C DEVELOPPMENT
-That's my C'PROGRAMS  !
-
