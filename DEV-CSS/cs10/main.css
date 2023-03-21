@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* main.css */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 50px;
+}
+
+/* -- visualisation des bordures de tableau -- */
+
+table, th, td {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+/* -- espacement et alignement dans les cellules -- */
+
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+
+/* -- Entête en inverse grisé -- */
+
+th {
+    background-color: darkgrey;
+    color: white;
+}
+
+/*       ---------------      */
+
+.fonduni 
+{
+    height: 300px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: red;
+}
+
+.fonddegrade
+{
+    height: 300px;
+    border: 1px solid black;
+    padding: 10px;
+    background: linear-gradient(red, yellow);
+}
+
+.homer
+{
+    height: 300px;
+    border: 1px solid black;
+    padding: 10px;
+    background-image:url("img/homer.jpg");
+    background-repeat: no-repeat;
+}
+
+.homerpartout
+{
+    height: 300px;
+    border: 1px solid black;
+    padding: 10px;
+    background-image:url("img/homer.gif");
+}
+
+.image
+{
+    height: 1302px;
+    border: 1px solid black;
+    padding: 10px;
+    background-image:url("img/skyfall1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

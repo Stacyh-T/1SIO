@@ -1,0 +1,18 @@
+ul{
+    margin: 0px;
+    padding: 0px;
+    width: 420px;
+    padding-right: 0px;
+    list-style: none;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+li{
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    float: left;
+    text-align: center;
+    border: 1px solid black;
+}

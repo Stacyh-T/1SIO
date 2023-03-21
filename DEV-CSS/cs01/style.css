@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/* main.css */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hello {
+    text-align: center;
+    font-size: 128px;
+    margin: 10px;
+    /* Pour neutraliser le 1em par défaut sous FF*/
+    color: darkorange;
+    padding: 20px;
+    background-color: lemonchiffon;
+    border: 1px solid darkorange;
+}

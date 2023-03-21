@@ -1,0 +1,46 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+h1, h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    font-size: 4em;
+}
+
+
+h2{
+    font-size: 2em;
+}
+
+
+img {
+    width: 15em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#clover{
+    color : red;
+    text-align: center;
+}
+
+#alex{
+    color: orange;
+    text-align: center;
+}
+
+#sam{
+    color: aqua;
+    text-align: center;
+}
+
+#totally_spies{
+    text-align: center;
+    color:bisque;
+    text-decoration:underline;
+}

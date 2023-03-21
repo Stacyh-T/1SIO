@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* main.css */
+
+body 
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: cadetblue;
+    text-align: center;
+    font-size:36pt;
+}
+/*
+'Segoe UI', 'Tahoma','Geneva', 'Verdana', sans-serif
+'Georgia, 'Times New Roman', 'Times', serif
+▪'Courier New', 'Courier', monospace
+*/
+.conteneur 
+{
+    font-family: 'Courier New', 'Courier', monospace;
+    background-color: gainsboro;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    border: 3px solid dimgrey;
+    padding: 20px;
+    border-radius: 15px;
+    color:darkslategray;
+    font-variant:uppercase;
+    font-weight: bold;
+}
+
+
+cite
+{
+    color:gray;
+}
+
+h2
+{
+    font-size:24pt;
+}
+
+p, cite
+{
+    font-size:16pt;
+}
