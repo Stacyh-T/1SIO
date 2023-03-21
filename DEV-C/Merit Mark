@@ -7,21 +7,21 @@ int note;                                   /*definir la variable "note" comme e
 
 
 printf("Rentrez votre Note\n");             /*demande de rentrer de note*/
-scanf("%d", &note);                         /*assigner la note obtenue à une variable "note"*/
+scanf("%d", &note);                         /*assigner la note obtenue Ã  une variable "note"*/
 
 
-if (note >= 16){                            /*si la note est supérieur ou égale à 16*/
+if (note >= 16){                            /*si la note est supÃ©rieur ou Ã©gale Ã  16*/
     printf("Mention : Tres bien !\n");      /*afficher "Mention : Tres bien !"*/
 }
 
-if (note>=14 && note<16){                   /*si la note est inférieur à 16 et supérieur ou égale à 14*/
+if (note>=14 && note<16){                   /*si la note est infÃ©rieur Ã  16 et supÃ©rieur ou Ã©gale Ã  14*/
     printf("Mention : Bien !\n");           /*afficher "Mention : Bien !"*/
 }
 
-if (note>=12 && note<14){                   /*si la note est supérieur ou égale à 12 et inférieure à 14*/
+if (note>=12 && note<14){                   /*si la note est supÃ©rieur ou Ã©gale Ã  12 et infÃ©rieure Ã  14*/
     printf("Mention : Assez bien !\n");     /*afficher "Mention : Assez bien !"*/
 }
-if (note<12){                               /*si la note est inférieure à 12*/
+if (note<12){                               /*si la note est infÃ©rieure Ã  12*/
     printf("Pas de mention");               /*afficher "Pas de mention!"*/
 }
 
