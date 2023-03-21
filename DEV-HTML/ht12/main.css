@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/* -- Visualisation des bordures de tableau -- */
+
+table, th, td {
+  border-style: solid;
+  border-width: 1px;
+  border-color : black;
+  border-collapse: collapse;
+}
+/* -- Taille des cellules -- */
+td {
+  width : 50px;
+  height : 100px;
+}
+
+/* -- Couleurs du drapeau -- */
+
+td.bleu {
+  background-color: blue;
+}
+td.blanc {
+  background-color: white;
+}
+td.rouge {
+  background-color: red;
+}
+
+  

@@ -1,0 +1,32 @@
+Titre français;Titre original;Acteur James Bond
+Casino Royale;Casino Royale;Barry Nelson
+
+James Bond 007 contre Dr. No;Dr No;Sean Connery
+Bons baisers de Russie;From Russia with Love;Sean Connery
+
+Goldfinger;Goldfinger;Sean Connery
+Opération Tonnerre;Thunderball;Sean Connery
+
+On ne vit que deux fois;You Only Live Twice;Sean Connery
+Casino Royale;Casino Royale;David Niven
+Au service secret de Sa Majesté;On Her Majesty's Secret Service;George Lazenby
+Les diamants sont éternels;Diamonds are forever;Sean Connery
+Vivre et laisser mourir;Live and Let Die;Roger Moore
+L'Homme au pistolet d'or;The Man with the Golden Gun;Roger Moore
+L'Espion qui m'aimait;The Spy Who Loved Me;Roger Moore
+Moonraker;Moonraker;Roger Moore
+Rien que pour vos yeux;For Your Eyes Only;Roger Moore
+Octopussy;Octopussy;Roger Moore
+Jamais plus jamais;Never Say Never Again;Sean Connery
+Dangereusement vôtre;A View to a Kill;Roger Moore
+Tuer n'est pas jouer;The Living Daylights;Timothy Dalton
+Permis de tuer;Licence to Kill;Timothy Dalton
+GoldenEye;GoldenEye;Pierce Brosnan
+Demain ne meurt jamais;Tomorrow Never Dies;Pierce Brosnan
+Le monde ne suffit pas;The World Is Not Enough;Pierce Brosnan
+Meurs un autre jour;Die Another Day;Pierce Brosnan
+Casino Royale;Casino Royale;Daniel Craig
+Quantum of Solace;Quantum of Solace;Daniel Craig
+Skyfall;Skyfall;Daniel Craig
+007 Spectre;Spectre;Daniel Craig
+Mourir peut attendre;No Time to Die;Daniel Craig
