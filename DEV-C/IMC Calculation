@@ -28,7 +28,7 @@ int main()
 
         if (imc <= -16.5)
         {
-            printf("dénutrition ou famine");
+            printf("dÃ©nutrition ou famine");
         }
         else if (imc >16.5 && imc <= 18.5)
         {
