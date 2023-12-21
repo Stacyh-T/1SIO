@@ -1,0 +1,244 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+/* --------NavBar (Barre de Naviagation)-------- */
+#menu{
+  width: 1050px;
+
+  margin:auto;
+  padding: 10px 0 0 0;
+
+  list-style: none;
+  background: yellow;
+  background: -moz-linear-gradient(#444, #111);
+  background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
+  background: -webkit-linear-gradient(#444, #111);
+  background: -o-linear-gradient(#444, #111);
+  background: -ms-linear-gradient(#444, #111);
+  background: linear-gradient(#444, #111);
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  -moz-box-shadow: 0 2px 1px #9c9c9c;
+  -webkit-box-shadow: 0 2px 1px #9c9c9c;
+  box-shadow: 0 2px 1px #9c9c9c;
+  list-style:none;
+  position:relative;
+  top:79%;
+}
+
+#menu li{
+  float: left;
+  padding: 0 0 10px 0;
+  position: relative
+}
+
+#menu a{
+
+  float: left;
+  height: 25px;
+  padding: 0 50px;
+  color: #999;
+  text-transform: uppercase;
+  font: bold 12px/25px Arial, Helvetica;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #000;
+}
+
+#menu li:hover > a{
+  color: #fafafa;
+}
+
+*html #menu li a:hover{ /* IE6 */
+  color: #fafafa;
+}
+
+#menu li:hover > ul{
+  display: block;
+}
+
+/* -----------Sous-menu---------- */
+
+#menu ul{
+
+list-style: none;
+margin: 0;
+padding: 0;
+display: none;
+position: absolute;
+top: 35px;
+left: 50px;
+z-index: 99999;
+background: #444;
+background: -moz-linear-gradient(#444, #111);
+background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
+background: -webkit-linear-gradient(#444, #111);
+background: -o-linear-gradient(#444, #111);
+background: -ms-linear-gradient(#444, #111);
+background: linear-gradient(#444, #111);
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+#menu ul li{
+
+float: none;
+margin: 0;
+padding: 0;
+display: block;
+-moz-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+-webkit-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+}
+
+#menu ul li:last-child{
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+
+#menu ul a{
+padding: 10px;
+height: auto;
+width:120px;
+
+line-height: 1;
+display: block;
+white-space: nowrap;
+float: none;
+text-transform: none;
+}
+
+
+*html #menu ul a{
+  height: 10px;
+  width: 150px;
+}
+
+*:first-child+html #menu ul a{
+  height: 10px;
+  width: 150px;
+}
+
+
+#menu ul a:hover{
+  background: #0186ba;
+  background: -moz-linear-gradient(#04acec,  #0186ba);
+  background: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba));
+  background: -webkit-linear-gradient(#04acec,  #0186ba);
+  background: -o-linear-gradient(#04acec,  #0186ba);
+  background: -ms-linear-gradient(#04acec,  #0186ba);
+  background: linear-gradient(#04acec,  #0186ba);
+}
+
+
+#menu ul li:first-child a{
+-moz-border-radius: 5px 5px 0 0;
+-webkit-border-radius: 5px 5px 0 0;
+border-radius: 5px 5px 0 0;
+}
+
+
+#menu ul li:first-child a:after{
+content: '';
+position: absolute;
+left: 30px;
+top: -8px;
+width: 0;
+height: 0;
+border-left: 5px solid transparent;
+border-right: 5px solid transparent;
+border-bottom: 8px solid #444;
+}
+
+
+#menu ul li:first-child a:hover:after{
+border-bottom-color: #04acec;
+}
+
+
+#menu ul li:last-child a{
+-moz-border-radius: 0 0 5px 5px;
+-webkit-border-radius: 0 0 5px 5px;
+border-radius: 0 0 5px 5px;
+}
+/*--------------Fin Sous-Menu-----------------*/
+
+
+/* -------Rétablissement du flottement------- */
+#menu:after{
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+/*--------------------------------------------*/
+
+/*----------------Fin NavBar------------------*/
+
+
+/*Les sélecteurs d'identifiant : "# + valeurid"
+Ce sélecteur simple permet de cibler un élément d'un document en fonction de la valeur de son attribut id. Dans un document,
+ il ne doit y avoir qu'un seul élément pour un identifiant donné. Syntaxe : #valeurid Exemple : #toc permettra de cibler l'élément
+qui possède l'identifiant toc (défini avec un attribut id="toc" (dans le html)).*/
+
+/* Helpers */
+/**************************/
+.margin-top-10 {padding-top:10px;}
+.margin-bot-10 {padding-bottom:10px;}
+
+/* Typographie */
+/* Attribut donnée pour les différents blocks de textes*/
+/**************************/
+#parallax-world-of-ugg h1 {font-family:'Oswald', sans-serif; font-size:24px; font-weight:400; text-transform: uppercase; color:rgb(255, 255, 255); padding:0; margin:0;}
+#parallax-world-of-ugg h2 {font-family:'Oswald', sans-serif; font-size:70px; letter-spacing:10px; text-align:center; color:white; font-weight:400; text-transform:uppercase; z-index:10; opacity:.9;}
+#parallax-world-of-ugg h3 {font-family:'Oswald', sans-serif; font-size:14px; line-height:0; font-weight:400; letter-spacing:8px; text-transform: uppercase; color:rgb(255, 255, 255);}
+#parallax-world-of-ugg p {font-family:'Source Sans Pro', sans-serif; font-weight:400; font-size:14px; line-height:24px; color: white;}
+.first-character {font-weight:400; float: left; font-size: 84px; line-height: 64px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Source Sans Pro', sans-serif;}
+
+.sc {color: #ffffff;}
+.ny {color: #ffffff;}
+.atw {color: #fcfcfc;}
+
+/* Section - Titre */
+/**************************/
+#parallax-world-of-ugg .title {padding: 60px; margin:0 auto; text-align:center;}
+#parallax-world-of-ugg .title h1 {font-size:35px; letter-spacing:8px;}
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg .block {padding: 60px; width:820px; margin:0 auto; text-align:justify;}
+#parallax-world-of-ugg .block-gray {padding: 60px;}
+#parallax-world-of-ugg .section-overlay-mask {position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.70;}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg .parallax-one {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://images.unsplash.com/photo-1480099225005-2513c8947aec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1303&q=80); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+#parallax-world-of-ugg .parallax-two {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://static.actu.fr/uploads/2018/12/A78R2202-960x640.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-world-of-ugg .parallax-three {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://images.unsplash.com/photo-1440688807730-73e4e2169fb8?dpr=1&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+
+/*Section - image non movible*/
+/*******************************/
+.img1 img{
+  border-radius: 10%; display:block; margin-left: auto; margin-right: auto;  width: 50%; height: 50%;
+
+
+
+/* Media Queries */
+/*Si la résolution de l'écran du visiteur est inférieure à tant....
+alors applique les propriétés CSS suivantes
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {padding: 40px; width:620px;}
+}
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {padding: 30px; width:420px;}
+  #parallax-world-of-ugg h2 {font-size:30px;}
+  #parallax-world-of-ugg .block {padding: 30px;}
+  #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .parallax-three {padding-top:100px; padding-bottom:100px;}
+}
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {padding: 30px 15px; width:290px;}
+}
+}

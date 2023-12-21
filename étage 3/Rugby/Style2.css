@@ -1,0 +1,52 @@
+/**
+Préparation des styles pour les balises en HTML
+**/
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url(../ardoise.jpg) ;    
+  height: 100%;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+
+}
+
+
+
+
+.menu-contenu ul {
+  display: block;
+  padding-left: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin: 0;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.3s ease 0.7s, width 0.7s ease;
+}
+
+.menu-contenu ul li {
+  list-style: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  cursor: pointer;
+  transition: color 0.5s, background 0.5s;
+}
+
+.menu-contenu ul li:hover {
+  color: #e5ff00;
+  background: #ffffff;
+}
+
+/** footer ou bas de page **/
+
+#footer {
+  line-height: 2em;
+  font-size: 0.9em;
+  display: inline-block;
+  min-width: 2em;
+  margin: 0 auto;
+}

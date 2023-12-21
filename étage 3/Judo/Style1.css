@@ -1,0 +1,293 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+/* --------NavBar (Barre de Naviagation)-------- */
+#menu{
+  width: 1050px;
+
+  margin:auto;
+  padding: 10px 0 0 0;
+
+  list-style: none;
+  background: yellow;
+  background: -moz-linear-gradient(#444, #111);
+  background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
+  background: -webkit-linear-gradient(#444, #111);
+  background: -o-linear-gradient(#444, #111);
+  background: -ms-linear-gradient(#444, #111);
+  background: linear-gradient(#444, #111);
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  -moz-box-shadow: 0 2px 1px #9c9c9c;
+  -webkit-box-shadow: 0 2px 1px #9c9c9c;
+  box-shadow: 0 2px 1px #9c9c9c;
+  list-style:none;
+  position:relative;
+  top:79%;
+}
+
+#menu li{
+  float: left;
+  padding: 0 0 10px 0;
+  position: relative
+}
+
+#menu a{
+
+  float: left;
+  height: 25px;
+  padding: 0 50px;
+  color: #999;
+  text-transform: uppercase;
+  font: bold 12px/25px Arial, Helvetica;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #000;
+}
+
+#menu li:hover > a{
+  color: #fafafa;
+}
+
+*html #menu li a:hover{ /* IE6 */
+  color: #fafafa;
+}
+
+#menu li:hover > ul{
+  display: block;
+}
+
+/* -----------Sous-menu---------- */
+
+#menu ul{
+
+list-style: none;
+margin: 0;
+padding: 0;
+display: none;
+position: absolute;
+top: 35px;
+left: 50px;
+z-index: 99999;
+background: #444;
+background: -moz-linear-gradient(#444, #111);
+background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
+background: -webkit-linear-gradient(#444, #111);
+background: -o-linear-gradient(#444, #111);
+background: -ms-linear-gradient(#444, #111);
+background: linear-gradient(#444, #111);
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+#menu ul li{
+
+float: none;
+margin: 0;
+padding: 0;
+display: block;
+-moz-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+-webkit-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+}
+
+#menu ul li:last-child{
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+
+#menu ul a{
+padding: 10px;
+height: auto;
+width:120px;
+
+line-height: 1;
+display: block;
+white-space: nowrap;
+float: none;
+text-transform: none;
+}
+
+
+*html #menu ul a{
+  height: 10px;
+  width: 150px;
+}
+
+*:first-child+html #menu ul a{
+  height: 10px;
+  width: 150px;
+}
+
+
+#menu ul a:hover{
+  background: #0186ba;
+  background: -moz-linear-gradient(#04acec,  #0186ba);
+  background: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba));
+  background: -webkit-linear-gradient(#04acec,  #0186ba);
+  background: -o-linear-gradient(#04acec,  #0186ba);
+  background: -ms-linear-gradient(#04acec,  #0186ba);
+  background: linear-gradient(#04acec,  #0186ba);
+}
+
+
+#menu ul li:first-child a{
+-moz-border-radius: 5px 5px 0 0;
+-webkit-border-radius: 5px 5px 0 0;
+border-radius: 5px 5px 0 0;
+}
+
+
+#menu ul li:first-child a:after{
+content: '';
+position: absolute;
+left: 30px;
+top: -8px;
+width: 0;
+height: 0;
+border-left: 5px solid transparent;
+border-right: 5px solid transparent;
+border-bottom: 8px solid #444;
+}
+
+
+#menu ul li:first-child a:hover:after{
+border-bottom-color: #04acec;
+}
+
+
+#menu ul li:last-child a{
+-moz-border-radius: 0 0 5px 5px;
+-webkit-border-radius: 0 0 5px 5px;
+border-radius: 0 0 5px 5px;
+}
+/*--------------Fin Sous-Menu-----------------*/
+/* -------Rétablissement du flottement------- */
+#menu:after{
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+/*--------------------------------------------*/
+
+/*----------------Fin NavBar------------------*/
+
+/* Override UGG site */
+#main {width: 100%; padding:0;}
+.content-asset p {margin:0 auto;}
+.breadcrumb {display:none;}
+
+/* Helpers */
+/**************************/
+.margin-top-10 {padding-top:10px;}
+.margin-bot-10 {padding-bottom:10px;}
+
+/* Typography */
+/**************************/
+#parallax-world-of-ugg h1 {font-family:'Oswald', sans-serif; font-size:24px; font-weight:400; text-transform: uppercase; color:rgb(255, 255, 255); padding:0; margin:0;}
+#parallax-world-of-ugg h2 {font-family:'Oswald', sans-serif; font-size:70px; letter-spacing:10px; text-align:center; color:white; font-weight:400; text-transform:uppercase; z-index:10; opacity:.9;}
+#parallax-world-of-ugg h3 {font-family:'Oswald', sans-serif; font-size:14px; line-height:0; font-weight:400; letter-spacing:8px; text-transform: uppercase; color:rgb(255, 255, 255);}
+#parallax-world-of-ugg p {font-family:'Source Sans Pro', sans-serif; font-weight:400; font-size:14px; line-height:24px;color: white;}
+.first-character {font-weight:400; float: left; font-size: 84px; line-height: 64px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Source Sans Pro', sans-serif;}
+
+.sc {color: #3b8595;}
+.ny {color: #3d3c3a;}
+.atw {color: #c48660;}
+
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg .title {padding: 60px; margin:0 auto; text-align:center;}
+#parallax-world-of-ugg .title h1 {font-size:35px; letter-spacing:8px;}
+
+/* Section - Block */#parallax-world-of-ugg h1
+/**************************/
+#parallax-world-of-ugg .block {padding: 60px; width:820px; margin:0 auto; text-align:justify;color: white;}
+#parallax-world-of-ugg .block-gray {padding: 60px;}
+#parallax-world-of-ugg .section-overlay-mask {position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.70;}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg .parallax-club {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://images.ladepeche.fr/api/v1/images/view/633f9ae7de1602055560b6bf/large/image.jpg?v=1); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+#parallax-world-of-ugg .parallax-rules {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://www.s-combats.com/wp-content/uploads/2017/04/judo-techniques.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-world-of-ugg .parallax-dojo {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://www.montauban.com/fileadmin/MEDIAS/Lieux/salle-arts-martiaux.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-world-of-ugg .parallax-âges {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://media.sudouest.fr/4795810/1000x500/so-5b3d775566a4bd2a4951e9c8-ph0.jpg?v=1530755255); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-world-of-ugg .parallax-parc {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://www.as-cabourg-judo.com/media/uploaded/sites/357/actualite/612caf21091ad_Standjudo.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-world-of-ugg .parallax-horloge {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://www.aquitaineonline.com/images/stories/Sud_Outest_2020/Le_temps_221020a.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+#parallax-world-of-ugg .parallax-contact {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://cdn.hellowatt.fr/media/solution/images/numeros-contacts-geg-source-energies.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg .line-break {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {padding: 40px; width:620px;}
+}
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {padding: 30px; width:420px;}
+  #parallax-world-of-ugg h2 {font-size:30px;}
+  #parallax-world-of-ugg .block {padding: 30px;}
+  #parallax-world-of-ugg .parallax-club, #parallax-world-of-ugg .parallax-rules, #parallax-world-of-ugg .parallax-dojo #parallax-world-of-ugg .parallax-âges #parallax-world-of-ugg .parallax-parc #parallax-world-of-ugg .parallax-horloge {padding-top:100px; padding-bottom:100px;}
+}
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {padding: 30px 15px; width:290px;}
+}
+.img1 img{
+  border-radius: 10%; display:block; margin-left: auto; margin-right: auto; width: 150px; height: 150px;
+}
+
+.img2 img{
+  border-radius: 10%; display:block; margin-left: auto; margin-right: auto; width: 15%; height: 15%;
+}
+
+#media
+{
+  text-align: center;
+}
+
+body{
+  background-image: url(../ardoise.jpg);
+}
+
+
+
+        {
+           margin: auto; /* Centre le titre du tableau */
+           font-family: Arial, Times, "Times New Roman", serif;
+           font-weight: bold;
+           font-size: 1.2em;
+           color: #009900;
+           margin-bottom: 20px; /* Pour éviter que le titre ne soit trop collé au tableau en-dessous */
+        }
+ 
+        table /* Le tableau en lui-même */
+        {
+           margin: auto; /* Centre le tableau */
+           border: 4px outset green; /* Bordure du tableau avec effet 3D (outset) */
+           border-collapse: collapse; /* Colle les bordures entre elles */
+           width:100%;
+        }
+        th /* Les cellules d'en-tête */
+        {
+           background-color: #006600;
+           color: white;
+           font-size: 1.1em;
+           font-family: Arial, "Arial Black", Times, "Times New Roman", serif;
+           border:1px solid red;
+        }
+ 
+        td /* Les cellules normales */
+        {
+           border: 1px solid black;
+           font-family: "Comic Sans MS", "Trebuchet MS", Times, "Times New Roman", serif;
+           text-align: center; /* Tous les textes des cellules seront centrés*/
+           padding: 5px; /* Petite marge intérieure aux cellules pour éviter que le texte touche les bordures */
+        }
+        td.time
+        {
+            width:5%;
+        }

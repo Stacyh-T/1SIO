@@ -1,0 +1,251 @@
+/* --------NavBar (Barre de Naviagation)-------- */
+#menu{
+    width: 1050px;
+
+    margin:auto;
+    padding: 10px 0 0 0;
+
+    list-style: none;
+    background: yellow;
+    background: -moz-linear-gradient(#444, #111);
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
+    background: -webkit-linear-gradient(#444, #111);
+    background: -o-linear-gradient(#444, #111);
+    background: -ms-linear-gradient(#444, #111);
+    background: linear-gradient(#444, #111);
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -moz-box-shadow: 0 2px 1px #9c9c9c;
+    -webkit-box-shadow: 0 2px 1px #9c9c9c;
+    box-shadow: 0 2px 1px #9c9c9c;
+    list-style:none;
+    position:relative;
+    top:79%;
+}
+
+#menu li{
+    float: left;
+    padding: 0 0 10px 0;
+    position: relative
+}
+
+#menu a{
+
+    float: left;
+    height: 25px;
+    padding: 0 50px;
+    color: #999;
+    text-transform: uppercase;
+    font: bold 12px/25px Arial, Helvetica;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #000;
+}
+
+#menu li:hover > a{
+    color: #fafafa;
+}
+
+*html #menu li a:hover{ /* IE6 */
+    color: #fafafa;
+}
+
+#menu li:hover > ul{
+    display: block;
+}
+
+/* -----------Sous-menu---------- */
+
+#menu ul{
+
+list-style: none;
+margin: 0;
+padding: 0;
+display: none;
+position: absolute;
+top: 35px;
+left: 50px;
+z-index: 99999;
+background: #444;
+background: -moz-linear-gradient(#444, #111);
+background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
+background: -webkit-linear-gradient(#444, #111);
+background: -o-linear-gradient(#444, #111);
+background: -ms-linear-gradient(#444, #111);
+background: linear-gradient(#444, #111);
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+#menu ul li{
+
+float: none;
+margin: 0;
+padding: 0;
+display: block;
+-moz-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+-webkit-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+}
+
+#menu ul li:last-child{
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+
+#menu ul a{
+padding: 10px;
+height: auto;
+width:120px;
+
+line-height: 1;
+display: block;
+white-space: nowrap;
+float: none;
+text-transform: none;
+}
+
+
+*html #menu ul a{
+    height: 10px;
+    width: 150px;
+}
+
+*:first-child+html #menu ul a{
+    height: 10px;
+    width: 150px;
+}
+
+
+#menu ul a:hover{
+    background: #0186ba;
+    background: -moz-linear-gradient(#04acec,  #0186ba);
+    background: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba));
+    background: -webkit-linear-gradient(#04acec,  #0186ba);
+    background: -o-linear-gradient(#04acec,  #0186ba);
+    background: -ms-linear-gradient(#04acec,  #0186ba);
+    background: linear-gradient(#04acec,  #0186ba);
+}
+
+
+#menu ul li:first-child a{
+-moz-border-radius: 5px 5px 0 0;
+-webkit-border-radius: 5px 5px 0 0;
+border-radius: 5px 5px 0 0;
+}
+
+
+#menu ul li:first-child a:after{
+content: '';
+position: absolute;
+left: 30px;
+top: -8px;
+width: 0;
+height: 0;
+border-left: 5px solid transparent;
+border-right: 5px solid transparent;
+border-bottom: 8px solid #444;
+}
+
+
+#menu ul li:first-child a:hover:after{
+border-bottom-color: #04acec;
+}
+
+
+#menu ul li:last-child a{
+-moz-border-radius: 0 0 5px 5px;
+-webkit-border-radius: 0 0 5px 5px;
+border-radius: 0 0 5px 5px;
+}
+/*--------------Fin Sous-Menu-----------------*/
+
+
+/* -------Rétablissement du flottement------- */
+#menu:after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+/*--------------------------------------------*/
+
+/*----------------Fin NavBar------------------*/
+
+/* Helpers */
+/**************************/
+.margin-top-10 {padding-top:10px;}
+.margin-bot-10 {padding-bottom:10px;}
+
+/* Typography */
+/**************************/
+h1 {font-family:'Oswald', sans-serif; font-size:24px; font-weight:400; text-transform: uppercase; color:white; padding:0; margin:0;}
+h2 {font-family:'Oswald', sans-serif; font-size:70px; letter-spacing:10px; text-align:center; color:black; font-weight:400; text-transform:uppercase; z-index:10; opacity:.9;}
+h3 {font-family:'Oswald', sans-serif; font-size:14px; line-height:0; font-weight:400; letter-spacing:8px; text-transform: uppercase; color:white;}
+p {font-family:'Source Sans Pro', sans-serif; font-weight:400; font-size:14px; line-height:24px;color: white;}
+.first-character {font-weight:400; float: left; font-size: 84px; line-height: 64px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Source Sans Pro', sans-serif;}
+
+
+
+/* Section - Title */
+/**************************/
+.title {padding: 60px; margin:0 auto; text-align:center;color: white}
+.title h1 {font-size:35px; letter-spacing:8px;color: white;}
+
+/* Section - Block */
+/**************************/
+.block {padding: 60px; width:820px; margin:0 auto; text-align:justify;}
+
+
+
+/* Image des Parallax */
+/**************************/
+.parallax-un {padding-top: 400px; padding-bottom: 400px; overflow: hidden; position: relative; width: 100%; background-image: url(https://www.gillette.fr/img/ybc_blog/post/rasage_natation_840_gillette.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+.parallax-deux {padding-top: 400px; padding-bottom: 400px; overflow: hidden; position: relative; width: 100%; background-image: url(https://c7.alamy.com/compfr/2hfbbg0/illustration-imprimee-dans-un-dictionnaire-francais-de-la-fin-du-siecle-19th-decrivant-certains-styles-de-natation-2hfbbg0.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+.parallax-trois {padding-top: 400px; padding-bottom: 400px; overflow: hidden; position: relative; width: 100%; background-image: url(https://www.loi1901.com/intranet/a_news/photo/administration25082020.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+.parallax-quatre {padding-top: 400px; padding-bottom: 400px; overflow: hidden; position: relative; width: 100%; background-image: url(https://mobile-img.lpcdn.ca/lpca/924x/r3996/a80b9c910cc030b3857bce604d07fb15.jpeg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+
+/* saut de ligne */
+/**************************/
+.sauter_ligne {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+.block {padding: 40px; width:620px;}
+}
+@media screen and (max-width: 767px) {
+.block {padding: 30px; width:420px;}
+h2 {font-size:30px;}
+.block {padding: 30px;}
+.parallax-one,  
+.parallax-two,  
+.parallax-three {padding-top:100px; padding-bottom:100px;}
+}
+@media screen and (max-width: 479px) {
+.block {padding: 30px 15px; width:290px;}
+}
+
+/* Configuration des image */
+/**************************/
+.img1 img{border-radius: 10%;display: block;margin-left: auto; margin-right: auto;  width : 150px; height : 150px;}
+.img2 img{display: block;margin-left: auto; margin-right: auto;  width : 200px; height : 200px;}
+
+/* Configuration des des tableau */
+/**************************/
+table{border-collapse:collapse; margin:auto; width:100%; margin-bottom:20px; text-align: center;}
+th, td{border:1px solid black;padding:10px;}
+.tableau_entrainement {
+    table-layout: fixed;
+    color: white;
+}
+
+a{display:block;text-align:center;}
+
+body{
+    background-image: url(../ardoise.jpg);
+}
+iframe{display: block;margin-left: auto; margin-right: auto; width : 600px; height : 450px; style="border:0";}
+
